@@ -746,6 +746,10 @@ EOF
   # START CONTAINER AND INSTALL USERLAND
   # ============================================================================
 
+msg_info "Waiting 120 seconds before starting LXC Container"
+sleep 120
+msg_ok "Finished waiting"
+
   msg_info "Starting LXC Container"
   # Checked, and with its own code. Unchecked, a failure here surfaced as pct's
   # generic 255 -- which the exit table reads as DPKG's fatal error, so 197 runs
