@@ -992,6 +992,10 @@ EOF
     fi
   fi
 
+msg_info "Waiting 120 seconds before starting LXC Container"
+sleep 120
+msg_ok "Finished waiting"
+
   # ============================================================================
   # START CONTAINER AND INSTALL USERLAND
   # ============================================================================
