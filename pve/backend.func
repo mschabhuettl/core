@@ -1177,6 +1177,10 @@ EOF
   # START CONTAINER AND INSTALL USERLAND
   # ============================================================================
 
+msg_info "Waiting 120 seconds before starting LXC Container"
+sleep 120
+msg_ok "Finished waiting"
+
   msg_info "Starting container"
   # From here a stop counts as during the setup; unset, _pve_ct_stopped_by looked only from "now".
   _CS_INSTALL_STARTED="$(date +%s)"
